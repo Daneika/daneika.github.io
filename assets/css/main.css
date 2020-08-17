@@ -2378,7 +2378,7 @@ button:active,
 
 #main > section.one {
   background-color: #81918e;
-  background-image: url("../../images/paint-splashing.jpg");
+  background-image: url("/assets/images/paint-splashing.jpg");
 }
 
 #main > section.two {
