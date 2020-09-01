@@ -2101,12 +2101,12 @@ button:active,
 }
 
 .view-project {
-  margin: 1.2rem 0 0.8rem 0;
-  font-size: 1.2rem;
+  margin: 0.2rem 0 0.2rem 0;
+  font-size: 1rem;
 }
 
 .view-code {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #888;
 }
 
