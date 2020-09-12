@@ -332,6 +332,11 @@ br.clear {
   font-size: 1.2rem;
 }
 
+.other-projects {
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
 /* Container */
 
 .container {
@@ -2388,7 +2393,7 @@ button:active,
 
 #main > section.one {
   background-color: #81918e;
-  background-image: url("/assets/images/paint-splashing.jpg");
+  background-image: url("../images/paint-splashing.jpg");
 }
 
 #main > section.two {
