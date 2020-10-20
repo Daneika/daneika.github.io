@@ -1,0 +1,618 @@
+/*Common styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay {
+  background-color: var (--primary-color);
+  box-shadow: 0.1rem 3rem var (--grey-color);
+}
+
+.section-header{
+  font-size: 5rem;
+  color: var(--white-color);
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0.5rem 0.6rem var(--grey-color);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/*Navbar*/
+.navbar-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+#open-navbar-icon {
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: 200;
+}
+
+.navbar-icon .line {
+  height: 0.2rem;
+  width: 3.5rem;
+  background-color: var(--light-grey-color);
+}
+
+#open-navbar-icon .line {
+  margin: 0.3rem 0;
+}
+
+.navbar-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  left: 0;
+  top: -100%;
+  opacity: 0;
+  z-index: 100;
+  transition: top 1s, opacity ease-in;
+}
+
+.change .navbar-wrapper {
+  top: 0;
+  opacity: 1;
+  z-index: 300;
+  transition: top 1s, opacity ease-in;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(71, 132, 218, 0.5), rgba(18, 115, 255, 0.3)),
+    url(images/dance-corridor.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.close-navbar-icon {
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  z-index: 100;
+}
+
+.close-navbar-icon-line {
+  position: absolute;
+}
+
+.line-1 {
+  transform: rotate(40deg);
+}
+
+.line-2 {
+  transform: rotate(-40deg);
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+}
+
+.nav-link {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  opacity: 0.8;
+  position: relative;
+  top: -100%;
+}
+
+.change .nav-link {
+  top: 0;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.change .nav-link:nth-child(1) {
+  transition: top 1s 0.6s, opacity 0.3s, color 0.3s;
+}
+
+.change .nav-link:nth-child(2) {
+  transition: top 1s 0.8s, opacity 0.3s, color 0.3s;
+}
+
+.change .nav-link:nth-child(3) {
+  transition: top 1s 1s, opacity 0.3s, color 0.3s;
+}
+
+.change .nav-link:nth-child(4) {
+  transition: top 1s 1.2s, opacity 0.3s, color 0.3s;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(71, 132, 218, 0.5), rgba(18, 115, 255, 0.3)),
+    url(images/break-dance.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.5rem 0.6rem var(--grey-color);
+  padding-top: 2rem;
+}
+
+.heading {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+
+.header-paragraph {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  max-width: 70rem;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+
+.logo h1 {
+  display: flex;
+}
+
+.logo h1 span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.logo h1 span:nth-child(1) {
+  animation: drop-letters 5s 0.1s infinite;
+}
+.logo h1 span:nth-child(2) {
+  animation: drop-letters 5s 0.2s infinite;
+}
+.logo h1 span:nth-child(3) {
+  animation: drop-letters 5s 0.3s infinite;
+}
+.logo h1 span:nth-child(4) {
+  animation: drop-letters 5s 0.4s infinite;
+}
+.logo h1 span:nth-child(5) {
+  animation: drop-letters 5s 0.5s infinite;
+}
+.logo h1 span:nth-child(6) {
+  animation: drop-letters 5s 0.6s infinite;
+}
+.logo h1 span:nth-child(7) {
+  animation: drop-letters 5s 0.7s infinite;
+}
+.logo h1 span:nth-child(8) {
+  animation: drop-letters 5s 0.8s infinite;
+}
+.logo h1 span:nth-child(9) {
+  animation: drop-letters 5s 0.9s infinite;
+}
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* About Us */
+.about {
+  padding: 3rem 5rem;
+  background-color: rgb(224, 227, 240);
+}
+
+/* .about-header {
+  font-size: 5rem;
+  color: var(--white-color);
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0.5rem 0.6rem var(--grey-color);
+  text-align: center;
+  padding: 1.5rem;
+} */
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-image {
+  width: 45rem;
+  height: 35rem;
+  object-fit: cover;
+  margin: 0 1rem;
+  border-radius: 15%;
+  padding: 2rem;
+}
+
+.about-paragraph {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 3rem;
+  justify-content: center;
+}
+
+/* Classes */
+
+/* .classes-header {
+  font-size: 5rem;
+  color: var(--white-color);
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0.5rem 0.6rem var(--grey-color);
+  text-align: center;
+  padding: 1.5rem;
+} */
+
+.dances-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      rgba(124, 144, 173, 0.8),
+      rgba(194, 216, 247, 0.5)
+    ),
+    url(images/blue-background.jpg) center no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.dance {
+  background-color: lightgray;
+  opacity: 0.7;
+  padding: 2rem;
+  margin: 3rem;
+  width: 70%;
+  display: flex;
+  transform: skewX(15deg);
+}
+
+.dance-content {
+  transform: skewX(-15deg);
+}
+
+.dance-image {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 80%;
+  object-fit: cover;
+  margin-right: 1rem;
+  transform: skewX(-15deg);
+}
+
+.dance-heading {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.dance-paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+/* Contact*/
+
+.contact {
+  padding: 3rem 5rem 8rem 5rem;
+  text-align: center;
+  background-color: rgb(224, 227, 240);
+}
+
+/* .contact-heading {
+  font-size: 5rem;
+  color: var(--white-color);
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0.5rem 0.6rem var(--grey-color);
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+} */
+
+.contact-form {
+  width: 80rem;
+  height: 50rem;
+  margin: auto;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem rgba(73, 111, 163, 0.5);
+  padding: 2rem;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.input-groups {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-groups .input-group {
+  width: 48%;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 3rem 1rem 3rem 1rem;
+  background-color: var(--secondary-color);
+  border: 0.1 rem solid var(--secondary-color);
+  font-size: 1.4rem;
+  color: var(--light-grey-color);
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 0.1rem solid #ccc;
+}
+
+.input-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--grey-color);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--grey-color);
+  box-shadow: 1rem 1rem 0.8rem rgba(73, 111, 163, 0.5);
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.form-btn:hover {
+  background-color: rgba(73, 111, 163, 0.5);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/*Footer*/
+.footer {
+  background-color: rgba(73, 111, 163, 0.5);
+  padding: 1rem 0 1rem 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin: 0.2rem;
+  padding: 0.3rem 10rem;
+  letter-spacing: 0.2rem;
+}
+
+.footer-link:hover {
+  transform: rotate(-20deg);
+  font-weight: bold;
+}
+
+.footer-paragraph {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1050px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    flex-grow: 1;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+
+  .header-paragraph {
+    font-size: 2.5rem;
+  }
+
+  .dance {
+    width: 80%;
+  }
+
+  .footer-link {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 4.5rem;
+  }
+
+  .header-paragraph {
+    display: none;
+  }
+
+  .logo {
+    top: 2.5rem;
+    right: 0.8rem;
+  }
+
+  .logo h1 span {
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.2rem;
+  }
+
+  .dance {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .dance-image {
+    margin: auto;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-icon{
+    width:4.5rem;
+    height: 4.5rem;
+  }
+  #open-navbar-icon {
+    left: 0.6rem;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .section-header {
+    font-size: 3rem;
+  }
+
+  .logo h1 span {
+    font-size: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .about-image {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .about-paragraph {
+    padding: 0.3rem;
+  }
+
+  .dances-wrapper {
+    padding: none;
+    background-size: cover;
+  }
+  .dance {
+    transform: skewX(5deg);
+    /* width: 80%; */
+  }
+  .dance-image {
+    transform: skewX(-5deg);
+  }
+  .dance-content {
+    transform: skewX(-5deg);
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    padding: 3rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .input-groups {
+    display: block;
+  }
+
+  .input-groups .input-group {
+    width: 100%;
+  }
+
+  .footer-link {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
