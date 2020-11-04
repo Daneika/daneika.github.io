@@ -103,6 +103,12 @@ html {
   display: flex;
 }
 
+@media (max-width: 1050px) {
+  .nav-list {
+    flex-direction: column;
+  }
+}
+
 .nav-link {
   font-size: 3rem;
   font-weight: 700;

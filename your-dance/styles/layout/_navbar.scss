@@ -71,6 +71,9 @@
 .nav-list {
   height: 100%;
   display: flex;
+  @include respond-to("large") {
+    flex-direction: column;
+  }
 }
 
 .nav-link {
@@ -101,8 +104,6 @@
       &:nth-child(#{$i}) {
         transition: top 1s #{$i / 5}s, opacity 0.3s, color 0.3s;
       }
-      }
+    }
   }
 }
-
-
