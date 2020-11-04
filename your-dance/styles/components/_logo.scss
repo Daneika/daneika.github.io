@@ -1,0 +1,45 @@
+.logo {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+
+  h1 {
+    display: flex;
+
+    span {
+      @for $i from 1 through 9 {
+        &:nth-child(#{$i}) {
+          animation: drop-letters 5s #{$i / 10}s infinite;
+        }
+      }
+
+      @keyframes drop-letters {
+        0% {
+          transform: translateY(0);
+        }
+        10% {
+          transform: translateY(0);
+        }
+        15% {
+          transform: translateY(-100%);
+        }
+        20% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      font-size: 2rem;
+      font-weight: 900;
+      color: $primary-color;
+      text-transform: uppercase;
+      background-color: $white-color;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+}

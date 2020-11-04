@@ -1,0 +1,91 @@
+.contact {
+  padding: 3rem 5rem 8rem 5rem;
+  text-align: center;
+  background-color: $off-white-color;
+}
+
+.contact-form {
+  width: 80rem;
+  height: 50rem;
+  margin: auto;
+  background-color: $white-color;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem $faded-blue-color;
+  padding: 2rem;
+}
+
+.contact-groups {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .input-group {
+    width: 48%;
+  }
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  position: relative;
+  label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $grey-color;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  input {
+    padding: 3rem 1rem 3rem 1rem;
+    background-color: $secondary-color;
+    border: 0.1rem solid $secondary-color;
+    font-size: 1.4rem;
+    color: $light-grey-color;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    &:focus {
+      border: 0.2rem solid #ccc;
+    }
+  }
+
+  textarea {
+    padding: 3rem 1rem 3rem 1rem;
+    background-color: $secondary-color;
+    border: 0.1rem solid $secondary-color;
+    font-size: 1.4rem;
+    color: $light-grey-color;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    &:focus {
+      border: 0.2rem solid #ccc;
+    }
+  }
+}
+
+.form-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 0.5rem;
+  color: $grey-color;
+  box-shadow: 1rem 1rem 0.8rem $faded-blue-color;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  &:hover {
+    background-color: $faded-blue-color;
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
