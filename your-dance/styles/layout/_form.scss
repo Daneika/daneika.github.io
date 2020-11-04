@@ -54,19 +54,8 @@
       border: 0.2rem solid #ccc;
     }
   }
-
   textarea {
-    padding: 3rem 1rem 3rem 1rem;
-    background-color: $secondary-color;
-    border: 0.1rem solid $secondary-color;
-    font-size: 1.4rem;
-    color: $light-grey-color;
-    letter-spacing: 0.1rem;
-    border-radius: 0.5rem;
-    transition: 0.3s;
-    &:focus {
-      border: 0.2rem solid #ccc;
-    }
+    @extend input; 
   }
 }
 

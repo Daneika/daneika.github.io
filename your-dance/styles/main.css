@@ -291,7 +291,7 @@ html {
   left: 1rem;
 }
 
-.input-group input {
+.input-group input, .input-group textarea {
   padding: 3rem 1rem 3rem 1rem;
   background-color: #eee;
   border: 0.1rem solid #eee;
@@ -302,22 +302,7 @@ html {
   transition: 0.3s;
 }
 
-.input-group input:focus {
-  border: 0.2rem solid #ccc;
-}
-
-.input-group textarea {
-  padding: 3rem 1rem 3rem 1rem;
-  background-color: #eee;
-  border: 0.1rem solid #eee;
-  font-size: 1.4rem;
-  color: #777;
-  letter-spacing: 0.1rem;
-  border-radius: 0.5rem;
-  transition: 0.3s;
-}
-
-.input-group textarea:focus {
+.input-group input:focus, .input-group textarea:focus {
   border: 0.2rem solid #ccc;
 }
 
@@ -518,7 +503,7 @@ html {
     font-size: 3rem;
   }
   .logo h1 span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 1.2rem;
     height: 1.2rem;
   }
