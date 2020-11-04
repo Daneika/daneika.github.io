@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-header {
+    font-size: 5rem;
+    color: $white-color;
+    letter-spacing: 0.3rem;
+    text-shadow: 0 0.5rem 0.6rem $grey-color;
+    text-align: center;
+    padding: 1.5rem;
+  }

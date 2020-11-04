@@ -1,0 +1,26 @@
+.about {
+  padding: 3rem 5rem;
+  background-color: $off-white-color;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-image {
+  width: 45rem;
+  height: 35rem;
+  object-fit: cover;
+  margin: 0 1rem;
+  border-radius: 15%;
+  padding: 2rem;
+}
+
+.about-paragraph {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 3rem;
+  justify-content: center;
+}
