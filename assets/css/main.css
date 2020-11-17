@@ -241,6 +241,7 @@ h2 {
 
 h2.alt {
   color: #888;
+  font-size: 4em;
 }
 
 h2.alt strong {
@@ -248,7 +249,7 @@ h2.alt strong {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 header {
@@ -2081,7 +2082,11 @@ button,
       rgba(0, 0, 0, 0.15)
     ),
     url("images/overlay.png");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
+  background-image: linear-gradient(
+      top,
+      rgba(0, 0, 0, 0),
+      rgba(170, 65, 231, 0.15)
+    ),
     url("images/overlay.png");
   -moz-transition: background-color 0.35s ease-in-out;
   -webkit-transition: background-color 0.35s ease-in-out;
@@ -2185,7 +2190,7 @@ button:active,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background: #222629 url("images/overlay.png");
+  background: linear-gradient(#050505, #050707);
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
   color: #fff;
   height: 100%;
@@ -2316,7 +2321,7 @@ button:active,
 #footer {
   margin-left: 375px;
   text-align: center;
-  background-color: #dce3e2;
+  background-color: #f5fafa;
   padding: 3em 0 4em 0;
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
     inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
@@ -2355,12 +2360,11 @@ button:active,
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
     inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
   text-align: center;
-  background-image: url("images/overlay.png");
 }
 
 #main > section.dark {
-  color: #ddd;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(238, 231, 231);
+  color: rgba(248, 246, 246, 0.75);
 }
 
 #main > section.dark h2,
@@ -2372,7 +2376,7 @@ button:active,
 }
 
 #main > section.dark strong {
-  color: #fff;
+  color: rgb(243, 241, 241);
   border-color: inherit;
 }
 
@@ -2386,14 +2390,15 @@ button:active,
 }
 
 #main > section.cover {
-  padding: 10em 0;
+  padding: 20em 0;
   background-size: cover;
   background-position: center center;
+  background-image: url("../images/paint-splashing.jpg");
+  height: 100vh;
 }
 
 #main > section.one {
-  background-color: #81918e;
-  background-image: url("../images/paint-splashing.jpg");
+  background-color: #f5fafa;
 }
 
 #main > section.two {
@@ -2401,11 +2406,11 @@ button:active,
 }
 
 #main > section.three {
-  background-color: #ecf1f1;
+  background-color: white;
 }
 
 #main > section.four {
-  background-color: #e8edec;
+  background-color: #f5fafa;
 }
 
 /* Wide */
